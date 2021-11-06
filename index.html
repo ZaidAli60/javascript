@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="result">0</h1>
+    <button id="plusButton">+</button>
+    <button id="minsButton">-</button>
+    <script>
+        // Get the + button element
+        let myCounter = 0;
+     const plusButton =  document.getElementById("plusButton");
+     const minsButton =  document.getElementById("minsButton");
+     const result =  document.getElementById("result");
+     plusButton.addEventListener("click", function () {
+        myCounter = myCounter + 1;
+        result.innerText = myCounter; 
+     });
+
+     minsButton.addEventListener("click", function () {
+        myCounter = myCounter - 1;
+        result.innerText = myCounter; 
+     });
+        // Get h1 element cotent 
+
+
+     //function is a block of code     
+      function testFun(){
+        console.log("1");
+        console.log("2");
+        console.log("3");
+        console.log("4");
+        console.log("5");
+        console.log("6");
+      }
+      testFun()
+      
+        // Increase the value of content in h1
+    </script>
+</body>
+</html>
